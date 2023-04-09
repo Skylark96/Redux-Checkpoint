@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+
+body {
+  background-image: radial-gradient(
+      circle at 44% 67%,
+      hsla(75, 0%, 92%, 0.1) 0%,
+      hsla(75, 0%, 92%, 0.1) 30%,
+      transparent 30%,
+      transparent 34%,
+      transparent 34%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 33% 92%,
+      hsla(75, 0%, 92%, 0.1) 0%,
+      hsla(75, 0%, 92%, 0.1) 16%,
+      transparent 16%,
+      transparent 53%,
+      transparent 53%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 0% 46%,
+      hsla(75, 0%, 92%, 0.1) 0%,
+      hsla(75, 0%, 92%, 0.1) 42%,
+      transparent 42%,
+      transparent 61%,
+      transparent 61%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 47% 44%,
+      hsla(75, 0%, 92%, 0.1) 0%,
+      hsla(75, 0%, 92%, 0.1) 96%,
+      transparent 96%,
+      transparent 97%,
+      transparent 97%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 34% 28%,
+      hsla(75, 0%, 92%, 0.1) 0%,
+      hsla(75, 0%, 92%, 0.1) 26%,
+      transparent 26%,
+      transparent 85%,
+      transparent 85%,
+      transparent 100%
+    ),
+    linear-gradient(135deg, rgb(48, 2, 209), rgb(100, 28, 120));
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 1%;
+}
+.App{
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.Add-task-div{
+  display: flex;
+  justify-content: center;
+}
+.add-task{
+  padding: 5%;
+}
+form{
+  height: 10%;
+  background-color: rgba(255, 255, 255, 0.599);
+  padding: 2%; 
+  width: 70%;
+  display: flex;
+  justify-content: flex;
+  border-radius: 5px;
+}
+#input{
+  all:unset;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.512);
+  color: rgb(255, 255, 255);
+}
+
+.tasks-box{  
+border: 1px solid rgba(245, 245, 245, 0.119);
+backdrop-filter: blur(5px);
+border-radius: 20px;
+
+
+}
+
+.theTask{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: min-content;
+  border: 2px solid rgb(255, 0, 0);
+  border-radius: 20px;
+  color: azure;
+  padding: 2%;
+  margin: 5%;
+  font-family: 'Sail', cursive;
+  font-size: 30px;
+}
+.theTask.isDone {
+  border-color: rgb(0, 255, 0);
+}
+.todo-text{
+  padding-top: 5px;
+}
+
+.btn{
+  align-self: center;
+  display: flex;
+  padding-right: 2%;
+  justify-content: space-between;
+}
+button{
+  position: relative;
+  all: unset;
+  cursor: pointer;
+  padding: 2%;
+  margin: 2%;
+}
+.edit{
+padding-top: 1px;
+color: gray;
+padding-left: 7px;}
+
+#delete{
+  color: gray;
+}
+
+#sub-btn:hover {
+  color: rgb(0, 191, 0);
+}
+#close:hover{
+  color: red;
+}
+#delete:hover{
+  color:rgba(255, 0, 0, 0.758);
+}
+.edit:hover{
+  color: rgb(0, 119, 255);
+}
+.tasks-btn{
+border: 2px solid rgba(245, 245, 245, 0.119);
+border-radius: 20px;
+font-family: 'Shrikhand', cursive;
+color: white;
+letter-spacing: 1px;
+}
+#btn-undone:hover {
+  color: red;
+  border-color: red;
+}
+#btn-done:hover {
+  color: rgb(0, 191, 0);
+  border-color: rgb(0, 191, 0);
+}
+h3{
+  font-family: 'Rampart One', cursive;
+  font-size: 50px;
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  color: aliceblue;
+}
